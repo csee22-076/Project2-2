@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="bootstrap/color-modes.js"></script>
+    <script>
+        function delete_product(){
+            if(confirm("게시물을 삭제할까요?")){
+                alert("게시물이 삭제되었습니다.");
+                window.location.href = "index.html";
+            }
+            else{
+                alert("취소되었습니다.");
+                window.location.href = "#";
+            }
+        }
+    </script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product detailed</title>
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .process{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .event{
+            border: 2px solid rgb(233, 52, 52);
+            padding: 5px;
+            display: inline-block;
+        }
+
+        .product-description{
+            border: 3px solid rgb(0, 0, 0);
+            padding: 10px;
+            border-radius: 4px;
+        }
+
+        #gray{
+            color: gray;
+            border-radius: 4px;
+        }
+        .img-of-represent{
+            width: 300px;
+            height: auto;
+        }
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/headers.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="col-lg-8 mx-auto p-4 py-md-5">
+        <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+            <a href="index.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="images/shop.png" width="40" height="32"></img>
+                    <span class="fs-4">&nbsp;Convenience store at a glance</span>
+                </a>
+        </header>
+
+        <main>
+            <h1>삼립)야채호빵(4입)</h1>
+            <hr>
+            <img src="images/hobbang.jpg" class="img-of-represent"></img><br><br>
+
+            <div class="details">
+                <div class="price"><h2>6,000원</h2></div><hr><br>
+                <div class="stock"><h4>재고: 8개</h4></div>
+                <div class="event">
+                    <h4>상품 행사: 2 + 1</h4>
+                </div>
+                <br><br><br>
+                <h4>Product Description</h4>
+                <div class="product-description">
+                    <p>겨울엔 역시 호호 불어먹는 삼립 '호'빵!!!</p>
+                </div>
+                <div class="row g-5">
+                    <div class="col-md-6">
+                        <p id="gray">품목: 음식</p>
+                    </div>
+                    <div class="col-md-6">
+                        <p id="gray">칼로리: 808 kcal</p>
+                    </div>
+                </div>
+            </div><hr>
+            <div class="process">
+                <div class="btn-group">
+                    <button type="button" class="btn btn-sm btn-outline-secondary" onclick="delete_product()">Delete</button>
+                </div>
+                &nbsp;
+                <div class="btn-group">
+                    <a href="edit.html"><button type="button" class="btn btn-sm btn-outline-secondary">Edit</button></a>
+                </div>
+            </div>
+        </main>
+        <footer class="pt-5 my-5 text-body-secondary border-top">
+            &copy;&nbsp;2023 CSAG Company, Inc
+        </footer>
+    </div>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

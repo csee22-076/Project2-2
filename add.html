@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <script src="bootstrap/color-modes.js"></script>
+    <script>
+        function validateForm() {
+            var product_name = document.form1.product_name;
+            if(product_name.value == ""){
+                alert("상품명을 입력하세요");
+                product_name.focus();
+                return false;
+            }
+
+            var product_price = document.form1.product_price;
+            if(product_price.value == ""){
+                alert("가격을 입력하세요");
+                product_price.focus();
+                return false;
+            }
+
+            var product_stock = document.form1.product_stock;
+            if(product_stock.value == ""){
+                alert("재고를 입력하세요");
+                product_stock.focus();
+                return false;
+            }
+
+            var product_kind = document.form1.product_kind;
+            if(product_kind.value == ""){
+                alert("품목을 선택하세요");
+                product_kind.focus();
+                return false;
+            }
+
+            var product_calorie = document.form1.product_calorie;
+            if(product_calorie.value == ""){
+                alert("열량을 입력하세요");
+                product_calorie.focus();
+                return false;
+            }
+
+            var product_event = document.form1.product_event;
+            if(product_event.value == ""){
+                alert("상품 행사를 선택하세요");
+                product_event.focus();
+                return false;
+            }
+
+            alert("게시물이 추가됩니다");
+        }
+        function cancel(){
+            if(confirm("목록으로 돌아가시겠습니까?")) return true;
+            else return false;
+        }
+    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add product</title>
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/checkout.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <a href="index.html"><img class="d-block mx-auto mb-4" src="images/shop.png" alt="" width="72" height="57"></a>
+                <h2>상품 추가</h2>
+            </div>
+
+            <div class="add-product">
+                <form name="form1" method="post" action="#" onsubmit="return validateForm()">
+                    <div class="row g-3">
+
+                        <div class="col-12">
+                            <label for="product_name" id="product_name" class="form-label">상품명</label>
+                            <input type="text" class="form-control" name="product_name">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="product_price" id="product_price" class="form-label">가격(원)</label>
+                            <input type="text" class="form-control" name="product_price" placeholder="1000">
+                        </div>
+
+                        <div class="col-12">
+                            <label for="product_stock" id="product_stock" class="form-label">재고(개)</label>
+                            <input type="text" class="form-control" name="product_stock" placeholder="10">
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="product_kind" id="product_kind" class="form-label">품목</label>
+                            <select class="form-select" name="product_kind">
+                                <option value="음식">음식</option>
+                                <option value="생활용품">생활용품</option>
+                                <option value="전자제품">전자제품</option>
+                                <option value="기타" selected>기타...</option>
+                            </select>
+                        </div>
+
+                        <div class="col-md-4">
+                            <label for="product_calorie" id="product_calorie" class="form-label">열량(kcal) / 없으면 0으로 입력</label>
+                            <input type="text" class="form-control" name="product_calorie">
+                        </div>
+
+                        <div>
+                            <label for="product_event" id="product_event">상품 행사</label><br>
+                            <input type="radio" name="product_event" value="1+1">1+1&nbsp;
+                            <input type="radio" name="product_event" value="2+1">2+1&nbsp;
+                            <input type="radio" name="product_event" value="가격할인">가격할인&nbsp;
+                            <input type="radio" name="product_event" value="덤증정">덤증정&nbsp;
+                            <input type="radio" name="product_event" value="기타">기타&nbsp;
+                            <input type="radio" name="product_event" value="없음" checked>없음
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div>
+                            <label for="product_detail" id="product_detail">상품 설명<span class="text-body-secondary">(Optional)</span></label><br>
+                            <textarea name="product_detail" cols="172" rows="6"
+                                placeholder="둘이 먹다가 하나 죽어도 모르는 맛!"></textarea>
+                        </div>
+
+                        <hr class="my-4">
+
+                        <div>
+                            <label for="product_image" id="product_image">상품 이미지<span class="text-body-secondary">(Optional)</span></label><br>
+                            <input type="file">
+                        </div>
+
+                        <hr class="my-4">
+
+                        <a href="index.html" onclick="return cancel()" class="w-100 btn btn-primary btn-lg">목록으로 돌아가기</a>
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">추가</button>
+                </form>
+
+            </div>
+        </main>
+
+        <footer class="my-5 pt-5 text-body-secondary text-center text-small">
+            <p class="mb-1">&copy; 2023 CSAG Company, Inc</p>
+        </footer>
+    </div>
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+
+    <script src="bootstrap/checkout.js"></script>
+</body>
+
+</html>

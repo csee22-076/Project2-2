@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="bootstrap/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>List</title>
+
+    <link href="bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        .list-of-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .button-add {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        #button-add {
+            margin-right: 10px;
+            margin-bottom: 10px;
+        }
+
+        .list-of-item {
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="bootstrap/headers.css" rel="stylesheet">
+</head>
+
+<body>
+    <header class="p-3 mb-3 border-bottom">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                <a href="index.html"
+                    class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
+                    <img src="images/shop.png" width="40" height="32"></img>
+                    <span class="fs-4">&nbsp;Convenience store at a glance</span>
+                </a>
+
+                <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                    <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+                </form>
+
+                <ul class="nav nav-pills">
+                    <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">FAQs</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <div class="album py-5 bg-light">
+        <div class="container">
+            <div class="list-of-top">
+                <div class="list-of-item" style="margin-bottom: 10px;">
+                    <h1>List of items</h1>
+                </div>
+                <div class="button-add">
+                    <img src="images/add.png" width="30" height="30" id="button-add"></img>
+                    <a href="add.html"><button type="button" class="btn btn-sm btn-outline-secondary" id="button-add">Add</button></a>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                <div class="col">
+                    <a href="view.html">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/hobbang.jpg" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">삼립)야채호빵(4입)</h4>
+                                <p class="card-text">6,000원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">8개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div><div class="col">
+                    <a href="#">
+                        <div class="card shadow-sm">
+                            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
+                                <title>Placeholder</title>
+                                <image href="images/question.png" width="100%" height="100%"></image>
+                            </svg>
+                
+                            <div class="card-body">
+                                <h4 class="card-text">????????</h4>
+                                <p class="card-text">???원</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted">?개 남음</small>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+          <div class="col-md-4 d-flex align-items-center">
+            <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+              <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+            </a>
+            <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2023 CSAG Company, Inc</span>
+          </div>
+      
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><image href="images/twitter.png" width="24" height="24"></image></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><image href="images/instagram.png" width="24" height="24"></svg></a></li>
+            <li class="ms-3"><a class="text-body-secondary" href="#"><svg class="bi" width="24" height="24"><image href="images/facebook.png" width="24" height="24"></svg></a></li>
+          </ul>
+        </footer>
+    </div>
+</body>
+
+</html>
